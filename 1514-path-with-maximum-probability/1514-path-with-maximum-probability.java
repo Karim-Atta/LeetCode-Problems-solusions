@@ -9,8 +9,7 @@ class Solution {
         queue.add(g.nodes.get(start));
         while(!queue.isEmpty()){
             Node currentNode = queue.poll();
-            System.out.println(" poll" + String.valueOf(currentNode.value));
-            currentNode.visited = true;    
+           currentNode.visited = true;    
 
             if(currentNode.value == end){
                 return currentNode.prob;
